@@ -168,7 +168,7 @@ Real-world Product
 ## 📫 Connect With Me
 
 * 💼 **LinkedIn:** https://www.linkedin.com/in/rajshree-sinha-78b7b9314/
-* 🐙 **GitHub:** [Add your GitHub]
+* 🐙 **GitHub:**https://github.com/rajshreesinha-23
 * 📧 **Email:** rajshreesinha2302@gmail.com
 * 🌐 **Portfolio:** https://rajshreesinha-23.github.io/portfolio/
 
