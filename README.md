@@ -32,7 +32,7 @@ I'm constantly learning through projects, hackathons, experimentation, and probl
 
 ### Languages
 
-`Python` `C` `Java` `JavaScript` `Solidity`
+`Python` `C` `Java` `JavaScript` 
 
 ### AI / GenAI
 
@@ -44,7 +44,7 @@ I'm constantly learning through projects, hackathons, experimentation, and probl
 
 ### Tools & Platforms
 
-`Git` `GitHub` `VS Code` `AWS` `FAISS` `Chroma`
+`Git` `GitHub` `VS Code` 
 
 ---
 
@@ -117,7 +117,6 @@ I'm particularly interested in moving beyond simply using AI APIs and learning h
 * 🌌 NASA Space Apps Challenge — 2024 & 2025
 * 🤖 AI & GenAI hackathon participant
 * 👩‍💼 **ACM DSU — Membership Chair**
-* 💼 **Entrepreneurship Cell — Operations Team**
 
 ---
 
@@ -170,8 +169,8 @@ Real-world Product
 
 * 💼 **LinkedIn:** https://www.linkedin.com/in/rajshree-sinha-78b7b9314/
 * 🐙 **GitHub:** [Add your GitHub]
-* 📧 **Email:** [Add your email]
-* 🌐 **Portfolio:** [Add your portfolio URL]
+* 📧 **Email:** rajshreesinha2302@gmail.com
+* 🌐 **Portfolio:** https://rajshreesinha-23.github.io/portfolio/
 
 ---
 
