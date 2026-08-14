@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajshree Sinha — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <span class="logo">rajshree<span class="accent">.</span>sinha</span>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO: terminal-styled intro -->
+<header class="hero">
+  <div class="terminal">
+    <div class="terminal-titlebar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-filename">about-me.sh</span>
+    </div>
+    <div class="terminal-body">
+      <p class="line"><span class="prompt">rajshree@dev</span><span class="path">~</span><span class="dollar">$</span> <span id="typed"></span><span class="cursor">▌</span></p>
+      <div id="output" class="output"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="about" class="section">
+    <p class="eyebrow">// about</p>
+    <h2>Hi, I'm Rajshree.</h2>
+    <p class="body-text">
+      I'm a 3rd-year Computer Science undergrad who likes figuring out how things work
+      by taking them apart — and then putting them back together, usually better.
+      Currently exploring software development, sharpening my fundamentals, and
+      building projects that force me to learn something new every time.
+      <br><br>
+      <em>Edit this paragraph in <code>index.html</code> — replace with your real bio, interests, and what you're looking for (internships, collaborations, etc).</em>
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <p class="eyebrow">// projects</p>
+    <h2>Things I've built</h2>
+    <div class="project-grid">
+
+      <a href="#" class="project-card">
+        <div class="card-tab">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="card-filename">project-one</span>
+        </div>
+        <div class="card-body">
+          <h3>Project One</h3>
+          <p>One-sentence description of what this project does and why you built it.</p>
+          <div class="tags"><span>Python</span><span>Flask</span></div>
+        </div>
+      </a>
+
+      <a href="#" class="project-card">
+        <div class="card-tab">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="card-filename">project-two</span>
+        </div>
+        <div class="card-body">
+          <h3>Project Two</h3>
+          <p>One-sentence description of what this project does and why you built it.</p>
+          <div class="tags"><span>React</span><span>Node.js</span></div>
+        </div>
+      </a>
+
+      <a href="#" class="project-card">
+        <div class="card-tab">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="card-filename">project-three</span>
+        </div>
+        <div class="card-body">
+          <h3>Project Three</h3>
+          <p>One-sentence description of what this project does and why you built it.</p>
+          <div class="tags"><span>C++</span><span>DSA</span></div>
+        </div>
+      </a>
+
+    </div>
+    <p class="hint">↳ Replace these three cards in <code>index.html</code> with your real projects — swap the title, description, tags, and the <code>href</code> link to GitHub/live demo.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <p class="eyebrow">// skills</p>
+    <h2>Stack</h2>
+    <div class="import-block">
+      <p><span class="kw">import</span> { <span class="val">C++</span>, <span class="val">Python</span>, <span class="val">JavaScript</span> } <span class="kw">from</span> <span class="str">'languages'</span>;</p>
+      <p><span class="kw">import</span> { <span class="val">React</span>, <span class="val">Node.js</span>, <span class="val">Flask</span> } <span class="kw">from</span> <span class="str">'frameworks'</span>;</p>
+      <p><span class="kw">import</span> { <span class="val">Git</span>, <span class="val">Docker</span>, <span class="val">Linux</span> } <span class="kw">from</span> <span class="str">'tools'</span>;</p>
+      <p class="hint-inline"><em>// edit these lists in index.html to match your real stack</em></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <p class="eyebrow">// contact</p>
+    <h2>Let's talk</h2>
+    <p class="body-text">Open to internships, collaborations, and interesting problems.</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com" class="contact-btn">Email</a>
+      <a href="https://github.com/rajshreesinha-23" target="_blank" class="contact-btn">GitHub</a>
+      <a href="#" class="contact-btn">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>built by rajshree sinha · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
