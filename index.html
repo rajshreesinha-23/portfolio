@@ -3,936 +3,1564 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rajshree Sinha — AI, Backend & Blockchain Engineer</title>
-<meta name="description" content="CSE undergrad building REST APIs, secure smart contracts and AI-driven compliance tools. Vice Chair, ACM DSU. Open to 2027 internships.">
-<meta property="og:title" content="Rajshree Sinha — Portfolio">
-<meta property="og:description" content="AI, backend and blockchain projects: RegulaLens AI, FreelanceVault, Vajra Pramana.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<title>Rajshree Sinha | Software Engineer</title>
+
+<meta name="description" content="Rajshree Sinha — Computer Science undergraduate interested in AI engineering, backend development, LLMs and blockchain.">
+<meta name="author" content="Rajshree Sinha">
+
+<meta property="og:title" content="Rajshree Sinha | Portfolio">
+<meta property="og:description" content="AI Engineering, Backend Development and Blockchain projects.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>R</text></svg>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-:root {
---bg:#07080d;
---card:#0f111a;
---line:#1d2030;
---tx:#e7e9f3;
---mu:#8b90a7;
---a:#7c5cff;
---b:#00e0c6;
---c:#ff5c93;
---g:linear-gradient(120deg,var(--a),var(--b));
-}
 
-:root[data-theme=light] {
---bg:#f6f7fb;
---card:#fff;
---line:#e2e4ee;
---tx:#14162a;
---mu:#5d627c;
+:root {
+    --background: #f7f7f5;
+    --surface: #ffffff;
+    --text: #252622;
+    --muted: #777871;
+    --border: #e5e5e0;
+    --accent: #35362f;
+    --soft: #efefeb;
+    --max-width: 1080px;
 }
 
 * {
-box-sizing:border-box;
-margin:0;
-padding:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html { scroll-behavior:smooth; }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
 
 body {
-font-family:'Space Grotesk',system-ui,sans-serif;
-background:var(--bg);
-color:var(--tx);
-line-height:1.6;
-overflow-x:hidden;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
 }
 
-.mono { font-family:'JetBrains Mono',monospace; }
-
-#bg {
-position:fixed;
-inset:0;
-z-index:-1;
-opacity:.7;
+a {
+    color: inherit;
 }
 
-#bar {
-position:fixed;
-top:0;
-left:0;
-height:3px;
-width:0;
-background:var(--g);
-z-index:100;
+.container {
+    width: min(var(--max-width), calc(100% - 48px));
+    margin: auto;
 }
+
+/* NAVIGATION */
 
 nav {
-position:fixed;
-top:0;
-width:100%;
-z-index:50;
-backdrop-filter:blur(14px);
-background:color-mix(in srgb,var(--bg) 70%,transparent);
-border-bottom:1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247,247,245,.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
 }
 
-nav div {
-max-width:1100px;
-margin:auto;
-padding:14px 24px;
-display:flex;
-align-items:center;
-gap:22px;
+.nav-inner {
+    max-width: var(--max-width);
+    margin: auto;
+    min-height: 70px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav .logo {
-font-weight:700;
-margin-right:auto;
-font-size:1.1rem;
+.logo {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-decoration: none;
 }
 
-nav a {
-color:var(--mu);
-text-decoration:none;
-font-size:.9rem;
-transition:.2s;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-nav a:hover,
-nav a.on { color:var(--tx); }
-
-button.t {
-background:none;
-border:1px solid var(--line);
-color:var(--tx);
-border-radius:8px;
-padding:5px 10px;
-cursor:pointer;
+.nav-links a {
+    font-size: .88rem;
+    text-decoration: none;
+    color: var(--muted);
+    transition: color .2s;
 }
 
-section {
-max-width:1100px;
-margin:auto;
-padding:100px 24px 40px;
+.nav-links a:hover {
+    color: var(--text);
 }
 
-h2 {
-font-size:clamp(1.8rem,4vw,2.6rem);
-margin-bottom:8px;
+.nav-links .nav-contact {
+    border: 1px solid var(--text);
+    color: var(--text);
+    padding: 7px 15px;
+    border-radius: 3px;
 }
 
-h2 span,.grad {
-background:var(--g);
--webkit-background-clip:text;
-background-clip:text;
-color:transparent;
+/* HERO */
+
+.hero {
+    min-height: 690px;
+    padding: 145px 0 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.sub {
-color:var(--mu);
-margin-bottom:36px;
+.availability {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    width: fit-content;
+    font-family: 'DM Mono', monospace;
+    font-size: .76rem;
+    color: var(--muted);
+    margin-bottom: 32px;
+    letter-spacing: .2px;
 }
 
-.tag {
-font-size:.8rem;
-color:var(--b);
+.availability-dot {
+    width: 7px;
+    height: 7px;
+    background: #66856b;
+    border-radius: 50%;
 }
 
-#hero {
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding-top:120px;
+.hero h1 {
+    font-size: clamp(3.2rem, 7vw, 5.8rem);
+    line-height: 1.05;
+    letter-spacing: -4px;
+    font-weight: 600;
+    max-width: 850px;
 }
 
-.pill {
-display:inline-flex;
-gap:8px;
-align-items:center;
-border:1px solid var(--line);
-background:var(--card);
-padding:6px 14px;
-border-radius:99px;
-font-size:.82rem;
-width:fit-content;
-margin-bottom:22px;
+.hero h1 span {
+    display: block;
 }
 
-.dot {
-width:8px;
-height:8px;
-border-radius:50%;
-background:var(--b);
-box-shadow:0 0 0 0 var(--b);
-animation:p 2s infinite;
+.hero-role {
+    margin-top: 24px;
+    font-size: 1.2rem;
+    color: var(--muted);
+    font-weight: 400;
 }
 
-@keyframes p {
-70% { box-shadow:0 0 0 10px transparent; }
+.hero-description {
+    max-width: 650px;
+    margin-top: 23px;
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.9;
 }
 
-h1 {
-font-size:clamp(2.6rem,8vw,5.6rem);
-line-height:1.02;
-letter-spacing:-2px;
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
 }
 
-.type {
-font-size:clamp(1.1rem,2.6vw,1.6rem);
-color:var(--mu);
-margin:18px 0;
-min-height:2.2em;
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 19px;
+    border: 1px solid var(--text);
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: .87rem;
+    font-weight: 500;
+    transition: background .2s, color .2s;
 }
 
-.type b {
-color:var(--tx);
-font-weight:500;
+.button.primary {
+    background: var(--text);
+    color: white;
 }
 
-.cur {
-display:inline-block;
-width:2px;
-height:1.1em;
-background:var(--b);
-vertical-align:-3px;
-animation:bl 1s steps(1) infinite;
+.button.primary:hover {
+    background: #484941;
 }
 
-@keyframes bl {
-50% { opacity:0; }
+.button.secondary {
+    color: var(--text);
 }
 
-.cta {
-display:flex;
-gap:12px;
-flex-wrap:wrap;
-margin-top:22px;
+.button.secondary:hover {
+    background: var(--soft);
 }
 
-.btn {
-padding:12px 22px;
-border-radius:12px;
-text-decoration:none;
-font-weight:500;
-border:1px solid var(--line);
-color:var(--tx);
-transition:.25s;
-background:var(--card);
-}
-
-.btn.p {
-background:var(--g);
-color:#05060a;
-border:0;
-}
-
-.btn:hover {
-transform:translateY(-3px);
-box-shadow:0 10px 30px -10px var(--a);
-}
-
-.stats {
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:14px;
-margin-top:56px;
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 780px;
+    margin-top: 75px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .stat {
-background:var(--card);
-border:1px solid var(--line);
-border-radius:16px;
-padding:18px;
+    padding: 20px 15px;
+    border-right: 1px solid var(--border);
 }
 
-.stat b {
-font-size:2rem;
-display:block;
+.stat:first-child {
+    padding-left: 0;
 }
 
-.stat small { color:var(--mu); }
-
-.grid {
-display:grid;
-gap:20px;
-grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+.stat:last-child {
+    border: none;
 }
 
-.card {
-background:var(--card);
-border:1px solid var(--line);
-border-radius:20px;
-padding:26px;
-position:relative;
-overflow:hidden;
-transition:transform .15s,border-color .3s;
-transform-style:preserve-3d;
+.stat strong {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -1px;
 }
 
-.card::before {
-content:"";
-position:absolute;
-inset:0;
-background:radial-gradient(400px circle at var(--x,50%) var(--y,0),color-mix(in srgb,var(--a) 22%,transparent),transparent 60%);
-opacity:0;
-transition:.3s;
+.stat span {
+    display: block;
+    color: var(--muted);
+    font-size: .78rem;
+    margin-top: 3px;
 }
 
-.card:hover { border-color:var(--a); }
-.card:hover::before { opacity:1; }
-.card>* { position:relative; }
+/* GENERAL SECTIONS */
 
-.card h3 {
-font-size:1.3rem;
-margin:6px 0 10px;
+.section {
+    padding: 90px 0;
+    border-top: 1px solid var(--border);
 }
 
-.card ul {
-margin:12px 0 0 18px;
-color:var(--mu);
-font-size:.93rem;
+.section-label {
+    font-family: 'DM Mono', monospace;
+    color: var(--muted);
+    font-size: .75rem;
+    letter-spacing: .4px;
+    margin-bottom: 14px;
 }
 
-.card li { margin-bottom:6px; }
-
-.chips {
-display:flex;
-flex-wrap:wrap;
-gap:7px;
-margin-top:14px;
+.section-title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    letter-spacing: -1.5px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
-.chip {
-font-size:.75rem;
-padding:4px 10px;
-border-radius:99px;
-border:1px solid var(--line);
-color:var(--mu);
-font-family:'JetBrains Mono',monospace;
+.section-description {
+    color: var(--muted);
+    margin-top: 12px;
+    margin-bottom: 38px;
+    max-width: 620px;
+    font-size: .95rem;
 }
 
-.links {
-display:flex;
-gap:16px;
-margin-top:18px;
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr .8fr;
+    gap: 60px;
+    align-items: start;
 }
 
-.links a {
-color:var(--b);
-text-decoration:none;
-font-size:.9rem;
+.about-text p {
+    color: var(--muted);
+    font-size: .97rem;
+    line-height: 1.95;
+    margin-bottom: 18px;
 }
 
-.links a:hover { text-decoration:underline; }
-
-.about {
-display:grid;
-gap:30px;
-grid-template-columns:1.3fr 1fr;
+.about-text strong {
+    color: var(--text);
+    font-weight: 600;
 }
 
-@media(max-width:800px) {
-.about { grid-template-columns:1fr; }
-nav a.h { display:none; }
+.profile-details {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 24px;
+    border-radius: 3px;
 }
 
-.term {
-background:#0b0d14;
-border:1px solid var(--line);
-border-radius:14px;
-overflow:hidden;
-font-size:.85rem;
-color:#c9cde4;
+.profile-details h3 {
+    font-size: .95rem;
+    margin-bottom: 18px;
+    font-weight: 600;
 }
 
-.term header {
-background:#14172280;
-padding:9px 14px;
-display:flex;
-gap:6px;
-align-items:center;
+.detail {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
 }
 
-.term header i {
-width:11px;
-height:11px;
-border-radius:50%;
-background:#ff5f56;
+.detail:last-child {
+    border-bottom: none;
 }
 
-.term header i:nth-child(2) { background:#ffbd2e; }
-.term header i:nth-child(3) { background:#27c93f; }
-
-.term pre {
-padding:16px;
-white-space:pre-wrap;
+.detail span:first-child {
+    font-size: .73rem;
+    color: var(--muted);
 }
 
-.k { color:#7c5cff; }
-.s { color:#00e0c6; }
-.n { color:#ff5c93; }
-
-.tabs {
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-margin-bottom:22px;
+.detail span:last-child {
+    font-size: .88rem;
+    font-weight: 500;
 }
 
-.tabs button {
-background:var(--card);
-border:1px solid var(--line);
-color:var(--mu);
-padding:8px 16px;
-border-radius:99px;
-cursor:pointer;
-font-family:inherit;
-transition:.2s;
+/* PROJECTS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
 }
 
-.tabs button.on {
-background:var(--g);
-color:#05060a;
-border-color:transparent;
+.project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color .2s;
 }
 
-.skills {
-display:flex;
-flex-wrap:wrap;
-gap:12px;
+.project-card:hover {
+    border-color: #aaa99f;
 }
 
-.sk {
-background:var(--card);
-border:1px solid var(--line);
-border-radius:12px;
-padding:10px 18px;
-transition:.2s;
+.project-category {
+    font-family: 'DM Mono', monospace;
+    font-size: .72rem;
+    color: var(--muted);
+    letter-spacing: .3px;
 }
 
-.sk:hover {
-transform:translateY(-4px) scale(1.04);
-border-color:var(--b);
+.project-card h3 {
+    font-size: 1.4rem;
+    letter-spacing: -.5px;
+    margin: 12px 0;
+    font-weight: 600;
 }
 
-.tl {
-border-left:2px solid var(--line);
-margin-left:8px;
-padding-left:28px;
+.project-card > p {
+    color: var(--muted);
+    font-size: .9rem;
+    line-height: 1.8;
 }
 
-.tl .it {
-position:relative;
-margin-bottom:34px;
+.project-features {
+    padding-left: 18px;
+    margin: 17px 0;
 }
 
-.tl .it::before {
-content:"";
-position:absolute;
-left:-37px;
-top:7px;
-width:14px;
-height:14px;
-border-radius:50%;
-background:var(--g);
-box-shadow:0 0 18px var(--a);
+.project-features li {
+    color: var(--muted);
+    font-size: .84rem;
+    margin-bottom: 9px;
+    padding-left: 3px;
 }
 
-.tl h4 { font-size:1.15rem; }
-
-.tl .d {
-color:var(--b);
-font-size:.8rem;
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: auto;
+    padding-top: 15px;
 }
 
-.tl p,.tl li {
-color:var(--mu);
-font-size:.95rem;
+.project-tech span {
+    font-size: .72rem;
+    padding: 4px 9px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    color: var(--muted);
 }
 
-.contact {
-text-align:center;
-padding-bottom:80px;
+.project-links {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    margin-top: 17px;
+    border-top: 1px solid var(--border);
 }
 
-.contact h2 { font-size:clamp(2rem,6vw,4rem); }
+.project-links a {
+    font-size: .84rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.project-links a:hover {
+    color: var(--muted);
+}
+
+/* SKILLS */
+
+.skills-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+}
+
+.skill-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skill-tabs button {
+    background: transparent;
+    border: none;
+    text-align: left;
+    padding: 11px 13px;
+    font-family: inherit;
+    font-size: .88rem;
+    color: var(--muted);
+    cursor: pointer;
+    border-left: 2px solid transparent;
+}
+
+.skill-tabs button.active {
+    color: var(--text);
+    background: var(--soft);
+    border-left-color: var(--text);
+    font-weight: 600;
+}
+
+.skill-content {
+    min-height: 200px;
+    padding: 25px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.skill-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.skill-content p {
+    color: var(--muted);
+    font-size: .86rem;
+    margin-bottom: 23px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background: var(--soft);
+    padding: 9px 14px;
+    border-radius: 2px;
+    font-size: .84rem;
+}
+
+/* EXPERIENCE */
+
+.timeline {
+    margin-left: 7px;
+    padding-left: 28px;
+    border-left: 1px solid #d5d5ce;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: 8px;
+    height: 10px;
+    width: 10px;
+    background: var(--text);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-family: 'DM Mono', monospace;
+    font-size: .74rem;
+    color: var(--muted);
+}
+
+.timeline-item h3 {
+    font-size: 1.08rem;
+    margin: 7px 0;
+    font-weight: 600;
+}
+
+.timeline-item p,
+.timeline-item li {
+    color: var(--muted);
+    font-size: .89rem;
+    line-height: 1.8;
+}
+
+.timeline-item ul {
+    padding-left: 18px;
+    margin-top: 8px;
+}
+
+.timeline-item li {
+    margin-bottom: 5px;
+}
+
+/* EDUCATION */
+
+.education-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 27px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.education-card h3 {
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.education-card p {
+    color: var(--muted);
+    font-size: .88rem;
+    margin-top: 6px;
+}
+
+.education-year {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: .77rem;
+    white-space: nowrap;
+}
+
+/* CONTACT */
+
+.contact-section {
+    padding: 95px 0;
+    border-top: 1px solid var(--border);
+}
+
+.contact-section h2 {
+    font-size: clamp(2.5rem, 6vw, 4.3rem);
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+
+.contact-section > .container > p {
+    color: var(--muted);
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-links a {
+    font-size: .9rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.contact-links a:hover {
+    color: var(--muted);
+}
+
+/* FOOTER */
 
 footer {
-text-align:center;
-color:var(--mu);
-padding:30px;
-border-top:1px solid var(--line);
-font-size:.85rem;
+    border-top: 1px solid var(--border);
+    padding: 25px 0;
 }
 
-.rv {
-opacity:0;
-transform:translateY(34px);
-transition:1s cubic-bezier(.2,.7,.2,1);
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.rv.in {
-opacity:1;
-transform:none;
+footer p,
+footer a {
+    font-size: .78rem;
+    color: var(--muted);
+    text-decoration: none;
 }
 
-@media(prefers-reduced-motion:reduce) {
-* {
-animation:none!important;
-transition:none!important;
-}
-.rv {
-opacity:1;
-transform:none;
-}
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: .8rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 8px;
+    }
+
+    .skill-tabs button {
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    .skill-tabs button.active {
+        border-left: none;
+        border-bottom-color: var(--text);
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 115px;
+        padding-bottom: 70px;
+    }
 }
 
-@media(max-width:600px) {
-.grid { grid-template-columns:1fr; }
-nav div { gap:12px; padding:12px 16px; }
-section { padding-left:18px; padding-right:18px; }
+@media (max-width: 560px) {
+
+    .container {
+        width: calc(100% - 36px);
+    }
+
+    .nav-inner {
+        padding: 0 18px;
+        min-height: 64px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: .75rem;
+    }
+
+    .nav-links a:nth-child(1),
+    .nav-links a:nth-child(3),
+    .nav-links a:nth-child(4) {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3.1rem;
+        letter-spacing: -2.5px;
+    }
+
+    .hero-role {
+        font-size: 1.02rem;
+    }
+
+    .hero-description {
+        font-size: .91rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat {
+        padding: 15px 10px;
+    }
+
+    .stat:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat:nth-child(3),
+    .stat:nth-child(4) {
+        border-top: 1px solid var(--border);
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .project-card {
+        padding: 21px;
+    }
+
+    .education-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<canvas id="bg"></canvas>
-<div id="bar"></div>
+<!-- NAVIGATION -->
 
 <nav>
-<div>
-<a href="#hero" class="logo grad">RS.</a>
-<a class="h" href="#about">About</a>
-<a class="h" href="#projects">Projects</a>
-<a class="h" href="#skills">Skills</a>
-<a class="h" href="#journey">Journey</a>
-<a href="#contact">Contact</a>
-<button class="t" id="th" aria-label="Toggle theme">◐</button>
-</div>
+    <div class="nav-inner">
+
+        <a href="#home" class="logo">RS.</a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact" class="nav-contact">Contact</a>
+        </div>
+
+    </div>
 </nav>
 
-<section id="hero">
 
-<div class="pill mono">
-<span class="dot"></span>
-Open to May–Aug 2027 internships
-</div>
+<!-- HERO -->
 
-<h1>Hi, I'm <span class="grad">Rajshree Sinha</span></h1>
+<main>
 
-<p class="type mono">
-I build <b id="tw"></b><span class="cur"></span>
-</p>
+<section class="hero container" id="home">
 
-<p style="max-width:640px;color:var(--mu)">
-CSE undergrad at Dayananda Sagar University (CGPA 8.14) crafting REST APIs, secure smart contracts and AI-driven compliance tools. Vice Chair of ACM DSU. Finalist in 4+ of 15+ hackathons.
-</p>
+    <div class="availability">
+        <span class="availability-dot"></span>
+        OPEN TO INTERNSHIP OPPORTUNITIES · 2027
+    </div>
 
-<div class="cta">
-<a class="btn p" href="#projects">View my work →</a>
-<a class="btn" href="resume_rajshree.pdf" target="_blank" rel="noopener">Download résumé</a>
-<a class="btn" href="https://github.com/rajshreesinha-23" target="_blank" rel="noopener">GitHub</a>
-<a class="btn" href="https://www.linkedin.com/in/rajshree-sinha-78b7b9314/" target="_blank" rel="noopener">LinkedIn</a>
-</div>
+    <h1>
+        Hi, I'm
+        <span>Rajshree Sinha.</span>
+    </h1>
 
-<div class="stats">
-<div class="stat"><b class="grad" data-n="8.14" data-d="2">0</b><small>CGPA / 10</small></div>
-<div class="stat"><b class="grad" data-n="15" data-s="+">0</b><small>Hackathons entered</small></div>
-<div class="stat"><b class="grad" data-n="4" data-s="+">0</b><small>Hackathon finals</small></div>
-<div class="stat"><b class="grad" data-n="300" data-s="+">0</b><small>Participants coordinated</small></div>
-</div>
+    <p class="hero-role">
+        Computer Science Undergraduate · AI & Backend Developer
+    </p>
 
-</section>
+    <p class="hero-description">
+        I build software at the intersection of artificial intelligence,
+        backend engineering and blockchain. Interested in developing
+        practical systems, exploring LLMs and solving problems through code.
+        Currently pursuing B.Tech in Computer Science at Dayananda Sagar
+        University, Bengaluru.
+    </p>
 
-<section id="about" class="rv">
+    <div class="hero-actions">
+        <a href="#projects" class="button primary">Explore my work ↗</a>
 
-<p class="tag mono">// 01 about</p>
-<h2>Engineer with a <span>systems mindset</span></h2>
-<p class="sub">Analytical, systematic, and obsessed with building things that are traceable and trustworthy.</p>
+        <a href="resume_rajshree.pdf"
+           class="button secondary"
+           target="_blank"
+           rel="noopener">
+           Download résumé ↓
+        </a>
 
-<div class="about">
-<div>
-<p style="color:var(--mu);margin-bottom:14px">
-I work across the stack: FastAPI and Node backends, React frontends, Solidity contracts and LLM-powered tooling. My projects share a theme: <b style="color:var(--tx)">auditability</b>. Page-numbered citations in RegulaLens, on-chain events in FreelanceVault, and human-authorized permissions in Vajra Pramana.
-</p>
+        <a href="https://github.com/rajshreesinha-23"
+           class="button secondary"
+           target="_blank"
+           rel="noopener">
+           GitHub ↗
+        </a>
 
-<p style="color:var(--mu)">
-As Vice Chair of ACM DSU, I've run a 24-hour hackathon and national-level events (including one with Google), coordinating students, faculty and external partners. I communicate technical ideas clearly, in writing and on stage.
-</p>
-</div>
+        <a href="https://www.linkedin.com/in/rajshree-sinha-78b7b9314/"
+           class="button secondary"
+           target="_blank"
+           rel="noopener">
+           LinkedIn ↗
+        </a>
+    </div>
 
-<div class="term">
-<header>
-<i></i><i></i><i></i>
-<span class="mono" style="margin-left:8px;color:var(--mu)">rajshree.ts</span>
-</header>
+    <div class="hero-stats">
 
-<pre class="mono"><span class="k">const</span> rajshree = {
-  role: <span class="s">"CSE Undergrad"</span>,
-  uni: <span class="s">"Dayananda Sagar Univ."</span>,
-  base: <span class="s">"Bengaluru, IN"</span>,
-  leads: <span class="s">"ACM DSU (Vice Chair)"</span>,
-  focus: [<span class="s">"AI"</span>, <span class="s">"Backend"</span>, <span class="s">"Blockchain"</span>],
-  grad: <span class="n">2028</span>,
-  available: <span class="n">true</span>
-};</pre>
-</div>
-</div>
-</section>
+        <div class="stat">
+            <strong>8.14</strong>
+            <span>CGPA / 10</span>
+        </div>
 
-<section id="projects" class="rv">
+        <div class="stat">
+            <strong>15+</strong>
+            <span>Hackathons</span>
+        </div>
 
-<p class="tag mono">// 02 projects</p>
-<h2>Selected <span>work</span></h2>
-<p class="sub">Three projects across AI, backend and blockchain.</p>
+        <div class="stat">
+            <strong>4+</strong>
+            <span>Hackathon finals</span>
+        </div>
 
-<div class="grid">
+        <div class="stat">
+            <strong>300+</strong>
+            <span>Participants coordinated</span>
+        </div>
 
-<article class="card">
-<span class="tag mono">AI · Backend · Compliance</span>
-<h3>RegulaLens AI</h3>
-<p style="color:var(--mu)">Regulatory intelligence platform that helps compliance teams analyze circulars and detect changes between versions.</p>
-<ul>
-<li>FastAPI backend with 4 REST endpoints (upload, list, retrieve, compare) documented in Swagger UI</li>
-<li>PDF validation and page-wise extraction via PyMuPDF, preserving page numbers for traceability</li>
-<li>difflib comparison API returning inserted, deleted and replaced blocks as structured JSON</li>
-<li>React dashboard built for planned citation-backed RAG Q&amp;A</li>
-</ul>
-<div class="chips">
-<span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">PyMuPDF</span><span class="chip">SQLite</span>
-</div>
-<div class="links">
-<a href="https://github.com/rajshreesinha-23/regulalens-ai" target="_blank" rel="noopener">GitHub ↗</a>
-</div>
-</article>
-
-<article class="card">
-<span class="tag mono">Blockchain · Security</span>
-<h3>FreelanceVault</h3>
-<p style="color:var(--mu)">Blockchain freelance escrow that holds client funds and releases payment on approval.</p>
-<ul>
-<li>Full lifecycle: creation, funding, submission, approval, release and refunds</li>
-<li>Role-based access control; ReentrancyGuard from OpenZeppelin on fund transfers</li>
-<li>Review-period timeout for payment claims</li>
-<li>On-chain events for every state change, giving an auditable payment history</li>
-</ul>
-<div class="chips">
-<span class="chip">Solidity</span><span class="chip">Hardhat</span><span class="chip">OpenZeppelin</span>
-</div>
-<div class="links">
-<a href="https://github.com/rajshreesinha-23/freelance-vault" target="_blank" rel="noopener">GitHub ↗</a>
-</div>
-</article>
-
-<article class="card">
-<span class="tag mono">Ongoing · SIH 2026 internal hackathon</span>
-<h3>Vajra Pramana</h3>
-<p style="color:var(--mu)">Human-authorized AI access platform for governing what AI agents may do.</p>
-<ul>
-<li>Identity verification and permission checks</li>
-<li>Risk-aware authorization of sensitive actions</li>
-<li>Blockchain-backed trail on Hyperledger Fabric</li>
-<li>Selected for the SIH 2026 internal hackathon</li>
-</ul>
-<div class="chips">
-<span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Hyperledger Fabric</span><span class="chip">PostgreSQL</span>
-</div>
-<div class="links">
-<a href="https://github.com/rajshreesinha-23" target="_blank" rel="noopener">GitHub ↗</a>
-</div>
-</article>
-
-</div>
-</section>
-
-<section id="skills" class="rv">
-
-<p class="tag mono">// 03 skills</p>
-<h2>Tech <span>toolkit</span></h2>
-<p class="sub">Tap a category.</p>
-
-<div class="tabs" id="tabs"></div>
-<div class="skills" id="sk"></div>
+    </div>
 
 </section>
 
-<section id="journey" class="rv">
 
-<p class="tag mono">// 04 journey</p>
-<h2>Leadership &amp; <span>education</span></h2>
-<p class="sub">Building communities as well as software.</p>
+<!-- ABOUT -->
 
-<div class="tl">
+<section class="section" id="about">
 
-<div class="it">
-<span class="d mono">2025 – PRESENT</span>
-<h4>Vice Chair, ACM DSU</h4>
-<ul>
-<li>Organized a 24-hour hackathon and national-level technical events, including an initiative with Google</li>
-<li>Collaborated with student teams, faculty and external partners; communicated requirements and schedules to stakeholders</li>
-</ul>
-</div>
+    <div class="container">
 
-<div class="it">
-<span class="d mono">2024</span>
-<h4>Core Organiser, Techflix S2</h4>
-<p>Coordinated a national-level symposium and hackathon with 300+ participants.</p>
-</div>
+        <p class="section-label">01 / ABOUT</p>
 
-<div class="it">
-<span class="d mono">2024 – 2028 (EXPECTED)</span>
-<h4>B.Tech CSE, Dayananda Sagar University</h4>
-<p>Bengaluru · CGPA 8.14 / 10</p>
-</div>
+        <h2 class="section-title">A little about me.</h2>
 
-</div>
+        <p class="section-description">
+            An engineer interested in building useful, reliable and
+            well-designed technology.
+        </p>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I'm a Computer Science undergraduate at
+                    <strong>Dayananda Sagar University, Bengaluru</strong>,
+                    with a strong interest in Artificial Intelligence,
+                    backend development, Large Language Models and
+                    blockchain technologies.
+                </p>
+
+                <p>
+                    My work spans FastAPI, Python, React, Solidity and
+                    AI-powered applications. I enjoy taking ideas from
+                    initial problem statements to working implementations,
+                    with particular attention to system design,
+                    traceability and practical usability.
+                </p>
+
+                <p>
+                    Beyond development, I serve as the
+                    <strong>Vice Chair of ACM DSU</strong>. I have helped
+                    organize hackathons and technical events, coordinating
+                    students, faculty and external partners.
+                </p>
+
+                <p>
+                    I believe good engineering is not just about writing
+                    code. It is about understanding the problem,
+                    making thoughtful decisions and building something
+                    that works.
+                </p>
+
+            </div>
+
+            <div class="profile-details">
+
+                <h3>Quick information</h3>
+
+                <div class="detail">
+                    <span>Education</span>
+                    <span>B.Tech Computer Science</span>
+                </div>
+
+                <div class="detail">
+                    <span>University</span>
+                    <span>Dayananda Sagar University</span>
+                </div>
+
+                <div class="detail">
+                    <span>Location</span>
+                    <span>Bengaluru, India</span>
+                </div>
+
+                <div class="detail">
+                    <span>Graduation</span>
+                    <span>2028</span>
+                </div>
+
+                <div class="detail">
+                    <span>Current CGPA</span>
+                    <span>8.14 / 10</span>
+                </div>
+
+                <div class="detail">
+                    <span>Position</span>
+                    <span>Vice Chair, ACM DSU</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="contact" class="contact rv">
 
-<p class="tag mono">// 05 contact</p>
-<h2>Let's build <span>something</span></h2>
-<p class="sub">I'm applying for 2027 technology internships and would love to chat.</p>
+<!-- PROJECTS -->
 
-<div class="cta" style="justify-content:center">
-<a class="btn p" href="mailto:rajshreesinha2302@gmail.com">rajshreesinha2302@gmail.com</a>
-<a class="btn" href="https://www.linkedin.com/in/rajshree-sinha-78b7b9314/" target="_blank" rel="noopener">LinkedIn</a>
-<a class="btn" href="https://github.com/rajshreesinha-23" target="_blank" rel="noopener">GitHub</a>
-</div>
+<section class="section" id="projects">
+
+    <div class="container">
+
+        <p class="section-label">02 / SELECTED WORK</p>
+
+        <h2 class="section-title">Things I've built.</h2>
+
+        <p class="section-description">
+            A selection of projects across AI, backend engineering
+            and blockchain.
+        </p>
+
+        <div class="project-grid">
+
+            <!-- REGULALENS -->
+
+            <article class="project-card">
+
+                <span class="project-category">
+                    AI · BACKEND · REGULATORY TECHNOLOGY
+                </span>
+
+                <h3>RegulaLens AI</h3>
+
+                <p>
+                    A regulatory intelligence platform designed to help
+                    compliance teams analyze regulatory documents and
+                    identify changes between different versions of
+                    circulars.
+                </p>
+
+                <ul class="project-features">
+
+                    <li>
+                        Developed a FastAPI backend with document upload,
+                        retrieval, listing and comparison endpoints.
+                    </li>
+
+                    <li>
+                        Implemented PDF validation and page-wise extraction
+                        using PyMuPDF.
+                    </li>
+
+                    <li>
+                        Built a document comparison engine using difflib
+                        to identify inserted, deleted and replaced text.
+                    </li>
+
+                    <li>
+                        Developed a React dashboard for document management
+                        and regulatory change monitoring.
+                    </li>
+
+                </ul>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>React</span>
+                    <span>PyMuPDF</span>
+                    <span>SQLite</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/rajshreesinha-23/regulalens-ai"
+                       target="_blank"
+                       rel="noopener">
+                       View repository ↗
+                    </a>
+                </div>
+
+            </article>
+
+
+            <!-- FREELANCEVAULT -->
+
+            <article class="project-card">
+
+                <span class="project-category">
+                    BLOCKCHAIN · SMART CONTRACT SECURITY
+                </span>
+
+                <h3>FreelanceVault</h3>
+
+                <p>
+                    A blockchain-based freelance escrow system that
+                    manages client funds and enables secure payments
+                    based on project approval.
+                </p>
+
+                <ul class="project-features">
+
+                    <li>
+                        Implemented the complete escrow lifecycle:
+                        creation, funding, submission, approval,
+                        payment release and refunds.
+                    </li>
+
+                    <li>
+                        Integrated role-based access control for
+                        different participants.
+                    </li>
+
+                    <li>
+                        Used OpenZeppelin ReentrancyGuard to protect
+                        fund transfer operations.
+                    </li>
+
+                    <li>
+                        Implemented review-period timeouts and
+                        on-chain events for transaction traceability.
+                    </li>
+
+                </ul>
+
+                <div class="project-tech">
+                    <span>Solidity</span>
+                    <span>Hardhat</span>
+                    <span>Ethereum</span>
+                    <span>OpenZeppelin</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/rajshreesinha-23/freelance-vault"
+                       target="_blank"
+                       rel="noopener">
+                       View repository ↗
+                    </a>
+                </div>
+
+            </article>
+
+
+            <!-- VAJRA PRAMANA -->
+
+            <article class="project-card">
+
+                <span class="project-category">
+                    AI · BLOCKCHAIN · ONGOING
+                </span>
+
+                <h3>Vajra Pramana</h3>
+
+                <p>
+                    A human-authorized AI access platform focused on
+                    controlling and governing the actions that AI
+                    agents are permitted to perform.
+                </p>
+
+                <ul class="project-features">
+
+                    <li>
+                        Designed identity verification and permission
+                        management workflows.
+                    </li>
+
+                    <li>
+                        Exploring risk-aware authorization for
+                        sensitive AI agent actions.
+                    </li>
+
+                    <li>
+                        Working on blockchain-backed audit trails
+                        using Hyperledger Fabric.
+                    </li>
+
+                    <li>
+                        Selected for the SIH 2026 internal hackathon.
+                    </li>
+
+                </ul>
+
+                <div class="project-tech">
+                    <span>Next.js</span>
+                    <span>Node.js</span>
+                    <span>Hyperledger Fabric</span>
+                    <span>PostgreSQL</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/rajshreesinha-23"
+                       target="_blank"
+                       rel="noopener">
+                       GitHub ↗
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
 
 </section>
 
-<footer class="mono">© 2026 Rajshree Sinha · Bengaluru, India</footer>
+
+<!-- SKILLS -->
+
+<section class="section" id="skills">
+
+    <div class="container">
+
+        <p class="section-label">03 / TECHNICAL SKILLS</p>
+
+        <h2 class="section-title">My technical toolkit.</h2>
+
+        <p class="section-description">
+            Technologies and tools I work with and continue to explore.
+        </p>
+
+        <div class="skills-layout">
+
+            <div class="skill-tabs" id="skillTabs">
+
+                <button class="active" data-skill="languages">
+                    Programming languages
+                </button>
+
+                <button data-skill="backend">
+                    Backend & Web
+                </button>
+
+                <button data-skill="ai">
+                    AI & LLMs
+                </button>
+
+                <button data-skill="blockchain">
+                    Blockchain
+                </button>
+
+                <button data-skill="database">
+                    Databases
+                </button>
+
+                <button data-skill="tools">
+                    Tools & Cloud
+                </button>
+
+                <button data-skill="core">
+                    Core CS
+                </button>
+
+            </div>
+
+            <div class="skill-content">
+
+                <h3 id="skillTitle">Programming languages</h3>
+
+                <p id="skillDescription">
+                    Languages used for software development,
+                    problem solving and application development.
+                </p>
+
+                <div class="skill-list" id="skillList"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="section" id="experience">
+
+    <div class="container">
+
+        <p class="section-label">04 / LEADERSHIP & EXPERIENCE</p>
+
+        <h2 class="section-title">Beyond the code.</h2>
+
+        <p class="section-description">
+            Experiences that have helped me grow as a collaborator,
+            organizer and problem solver.
+        </p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <span class="timeline-date">
+                    2025 – PRESENT
+                </span>
+
+                <h3>Vice Chair · ACM DSU</h3>
+
+                <ul>
+                    <li>
+                        Organized a 24-hour hackathon and national-level
+                        technical events, including an initiative with Google.
+                    </li>
+
+                    <li>
+                        Coordinated student teams, faculty and external
+                        partners.
+                    </li>
+
+                    <li>
+                        Contributed to event planning, communication
+                        and technical community initiatives.
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-date">
+                    2024
+                </span>
+
+                <h3>Core Organiser · Techflix S2</h3>
+
+                <p>
+                    Coordinated a national-level technical symposium
+                    and hackathon involving 300+ participants.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-date">
+                    2026
+                </span>
+
+                <h3>Tata Imagination Challenge · Round 1</h3>
+
+                <p>
+                    Successfully cleared Round 1 of the
+                    Tata Imagination Challenge.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section class="section" id="education">
+
+    <div class="container">
+
+        <p class="section-label">05 / EDUCATION</p>
+
+        <h2 class="section-title">Academic background.</h2>
+
+        <p class="section-description">
+            My foundation in computer science and engineering.
+        </p>
+
+        <div class="education-card">
+
+            <div>
+                <h3>Bachelor of Technology · Computer Science</h3>
+
+                <p>Dayananda Sagar University · Bengaluru, India</p>
+
+                <p>CGPA: 8.14 / 10</p>
+            </div>
+
+            <span class="education-year">
+                2024 – 2028
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <p class="section-label">06 / GET IN TOUCH</p>
+
+        <h2>Let's connect.</h2>
+
+        <p>
+            Interested in collaborating, discussing technology
+            or exploring internship opportunities?
+            Feel free to reach out.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:rajshreesinha2302@gmail.com">
+                Email ↗
+            </a>
+
+            <a href="https://www.linkedin.com/in/rajshree-sinha-78b7b9314/"
+               target="_blank"
+               rel="noopener">
+                LinkedIn ↗
+            </a>
+
+            <a href="https://github.com/rajshreesinha-23"
+               target="_blank"
+               rel="noopener">
+                GitHub ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <p>© 2026 Rajshree Sinha</p>
+
+        <p>Bengaluru, India · Built with HTML, CSS & JavaScript.</p>
+
+        <a href="#home">Back to top ↑</a>
+
+    </div>
+
+</footer>
+
+
+<!-- SKILLS INTERACTION -->
 
 <script>
-// Typewriter
-const words = [
-"REST APIs with FastAPI",
-"secure smart contracts",
-"AI-driven compliance tools",
-"agentic AI systems"
-];
 
-let wi=0, ci=0, del=false;
-const tw=document.getElementById('tw');
+const skills = {
 
-(function tick(){
-const w=words[wi];
-tw.textContent=w.slice(0,ci);
+    languages: {
+        title: "Programming languages",
+        description: "Languages used for software development and problem solving.",
+        items: [
+            "Python",
+            "C",
+            "C++",
+            "JavaScript",
+            "Solidity",
+            "SQL"
+        ]
+    },
 
-if(!del && ci===w.length){
-del=true;
-return setTimeout(tick,1500);
-}
+    backend: {
+        title: "Backend & Web Development",
+        description: "Building web applications, APIs and backend services.",
+        items: [
+            "FastAPI",
+            "Django",
+            "Node.js",
+            "React",
+            "HTML",
+            "CSS",
+            "REST APIs",
+            "Swagger / OpenAPI"
+        ]
+    },
 
-if(del && ci===0){
-del=false;
-wi=(wi+1)%words.length;
-}
+    ai: {
+        title: "Artificial Intelligence & LLMs",
+        description: "Exploring machine learning, generative AI and intelligent applications.",
+        items: [
+            "Machine Learning",
+            "Generative AI",
+            "Large Language Models",
+            "Agentic AI",
+            "LangChain",
+            "LangGraph",
+            "Claude API",
+            "RAG"
+        ]
+    },
 
-ci+=del?-1:1;
-setTimeout(tick,del?35:70);
-})();
+    blockchain: {
+        title: "Blockchain Development",
+        description: "Smart contract development and decentralized systems.",
+        items: [
+            "Solidity",
+            "Smart Contracts",
+            "Hardhat",
+            "Ethereum",
+            "OpenZeppelin",
+            "Hyperledger Fabric"
+        ]
+    },
 
-// Theme
-const root=document.documentElement;
+    database: {
+        title: "Databases",
+        description: "Working with relational databases and application data.",
+        items: [
+            "PostgreSQL",
+            "MySQL",
+            "SQLite",
+            "SQL"
+        ]
+    },
 
-try {
-const savedTheme=localStorage.getItem('th');
-if(savedTheme) root.dataset.theme=savedTheme;
-} catch(e) {}
+    tools: {
+        title: "Tools & Cloud",
+        description: "Development tools, version control and infrastructure.",
+        items: [
+            "Git",
+            "GitHub",
+            "GitHub Actions",
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "Linux"
+        ]
+    },
 
-document.getElementById('th').onclick=()=>{
-const t=root.dataset.theme==='light'?'dark':'light';
-root.dataset.theme=t;
+    core: {
+        title: "Computer Science Fundamentals",
+        description: "Core concepts applied to software engineering.",
+        items: [
+            "Data Structures & Algorithms",
+            "Object-Oriented Programming",
+            "DBMS",
+            "Operating Systems",
+            "Computer Networks",
+            "SDLC",
+            "Problem Solving"
+        ]
+    }
 
-try {
-localStorage.setItem('th',t);
-} catch(e) {}
 };
 
-// Skills
-const data={
-"Languages":["Python","SQL","C","C++","JavaScript","Solidity"],
 
-"Backend & Web":["FastAPI","Django","Node.js","React","REST APIs","Swagger/OpenAPI","HTML","CSS"],
+const tabs = document.querySelectorAll(".skill-tabs button");
 
-"AI / LLMs":["Machine Learning","Generative AI","LLMs","Agentic AI","LangChain","LangGraph","Claude API","RAG"],
+const skillTitle = document.getElementById("skillTitle");
 
-"Blockchain":["Smart Contracts","Hardhat","Ethereum","Hyperledger Fabric"],
+const skillDescription =
+    document.getElementById("skillDescription");
 
-"Databases":["PostgreSQL","MySQL","SQLite","SQL"],
+const skillList = document.getElementById("skillList");
 
-"DevOps & Tools":["Git","GitHub Actions (CI/CD)","Docker","Kubernetes","AWS","Linux"],
 
-"Core CS":["Data Structures & Algorithms","OOP","SDLC","Analytical Problem Solving","Technical Communication"]
-};
+function displaySkills(category) {
 
-const tabs=document.getElementById('tabs');
-const sk=document.getElementById('sk');
+    const selected = skills[category];
 
-function show(k){
-[...tabs.children].forEach(b=>{
-b.classList.toggle('on',b.textContent===k);
-});
+    if (!selected) return;
 
-sk.innerHTML=data[k].map(x=>`<span class="sk">${x}</span>`).join('');
+    skillTitle.textContent = selected.title;
+
+    skillDescription.textContent = selected.description;
+
+    skillList.innerHTML = "";
+
+    selected.items.forEach(item => {
+
+        const element = document.createElement("span");
+
+        element.className = "skill-item";
+
+        element.textContent = item;
+
+        skillList.appendChild(element);
+
+    });
+
+    tabs.forEach(tab => {
+
+        tab.classList.toggle(
+            "active",
+            tab.dataset.skill === category
+        );
+
+    });
+
 }
 
-Object.keys(data).forEach(k=>{
-const b=document.createElement('button');
-b.textContent=k;
-b.onclick=()=>show(k);
-tabs.appendChild(b);
-});
 
-show("Languages");
+tabs.forEach(tab => {
 
-// Reveal + counters
-const co=new IntersectionObserver(es=>es.forEach(e=>{
-if(!e.isIntersecting)return;
+    tab.addEventListener("click", () => {
 
-const el=e.target;
-co.unobserve(el);
+        displaySkills(tab.dataset.skill);
 
-const n=+el.dataset.n;
-const d=+el.dataset.d||0;
-const s=el.dataset.s||'';
-const t0=performance.now();
-
-(function f(t){
-const p=Math.min((t-t0)/1400,1);
-const v=n*(1-Math.pow(1-p,3));
-
-el.textContent=v.toFixed(d)+(p===1?s:'');
-
-if(p<1)requestAnimationFrame(f);
-})(t0);
-
-}),{threshold:.6});
-
-document.querySelectorAll('[data-n]').forEach(e=>co.observe(e));
-
-const ro=new IntersectionObserver(es=>es.forEach(e=>{
-if(e.isIntersecting)e.target.classList.add('in');
-}),{threshold:.12});
-
-document.querySelectorAll('.rv').forEach(e=>ro.observe(e));
-
-// Scroll progress
-const bar=document.getElementById('bar');
-
-addEventListener('scroll',()=>{
-const max=document.body.scrollHeight-innerHeight;
-bar.style.width=(max>0?scrollY/max*100:0)+'%';
-},{passive:true});
-
-// Card spotlight + tilt
-document.querySelectorAll('.card').forEach(c=>{
-
-c.addEventListener('mousemove',e=>{
-const r=c.getBoundingClientRect();
-const x=e.clientX-r.left;
-const y=e.clientY-r.top;
-
-c.style.setProperty('--x',x+'px');
-c.style.setProperty('--y',y+'px');
-
-c.style.transform=
-`perspective(900px) rotateY(${(x/r.width-.5)*8}deg) rotateX(${-(y/r.height-.5)*8}deg)`;
-});
-
-c.addEventListener('mouseleave',()=>{
-c.style.transform='';
-});
+    });
 
 });
 
-// Particle network background
-const cv=document.getElementById('bg');
-const cx=cv.getContext('2d');
 
-let W,H,P=[],m={x:-999,y:-999};
-
-function rs(){
-W=cv.width=innerWidth;
-H=cv.height=innerHeight;
-
-P=Array.from(
-{length:Math.min(90,Math.floor(W/14))},
-()=>({
-x:Math.random()*W,
-y:Math.random()*H,
-vx:(Math.random()-.5)*.4,
-vy:(Math.random()-.5)*.4
-})
-);
-}
-
-rs();
-
-addEventListener('resize',rs);
-
-addEventListener('mousemove',e=>{
-m.x=e.clientX;
-m.y=e.clientY;
-});
-
-(function draw(){
-
-cx.clearRect(0,0,W,H);
-
-const dark=root.dataset.theme!=='light';
-
-P.forEach((p,i)=>{
-
-p.x+=p.vx;
-p.y+=p.vy;
-
-if(p.x<0||p.x>W)p.vx*=-1;
-if(p.y<0||p.y>H)p.vy*=-1;
-
-cx.fillStyle=dark?'#7c5cff':'#7c5cff88';
-cx.beginPath();
-cx.arc(p.x,p.y,1.6,0,7);
-cx.fill();
-
-for(let j=i+1;j<P.length;j++){
-
-const q=P[j];
-const d=Math.hypot(p.x-q.x,p.y-q.y);
-
-if(d<120){
-cx.strokeStyle=`rgba(0,224,198,${(1-d/120)*.25})`;
-cx.beginPath();
-cx.moveTo(p.x,p.y);
-cx.lineTo(q.x,q.y);
-cx.stroke();
-}
-}
-
-const dm=Math.hypot(p.x-m.x,p.y-m.y);
-
-if(dm<160){
-cx.strokeStyle=`rgba(124,92,255,${(1-dm/160)*.5})`;
-cx.beginPath();
-cx.moveTo(p.x,p.y);
-cx.lineTo(m.x,m.y);
-cx.stroke();
-}
-
-});
-
-requestAnimationFrame(draw);
-
-})();
+displaySkills("languages");
 
 </script>
 
