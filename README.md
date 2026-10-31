@@ -1,183 +1,161 @@
 # 👋 Hi, I'm Rajshree Sinha
 
-### Computer Science Undergraduate · AI & LLM Engineer in Progress
+### Computer Science Undergraduate | AI Engineer | LLM & GenAI Enthusiast
 
-> **Building things, breaking things, learning from both.**
+> Building intelligent applications, experimenting with emerging technologies, and turning ideas into working products.
 
-Welcome to my personal portfolio repository — a space where I showcase my **projects, technical skills, experiments, achievements, and journey in software development and AI**.
+I'm a Computer Science undergraduate at **Dayananda Sagar University, Bengaluru**, passionate about Artificial Intelligence, Generative AI, LLM Engineering, and full-stack development.
 
-I'm a Computer Science undergraduate passionate about **Artificial Intelligence, Large Language Models, Generative AI, and building practical intelligent applications**.
+I enjoy building practical applications that combine AI, backend engineering, and modern web technologies. My focus is on moving beyond API integration to understanding and engineering reliable, scalable AI systems.
 
----
-
-## 🧑‍💻 About Me
-
-I'm interested in understanding how AI systems work and, more importantly, **building things with them**.
-
-My current focus is on:
-
-* 🤖 **LLM Engineering & Generative AI**
-* 🧠 **RAG & Vector Databases**
-* 🔗 **LangChain & LangGraph**
-* 🕹️ **Agentic AI**
-* ☁️ **AI application deployment**
-* 💻 **Data Structures & Algorithms**
-* 🚀 Building real-world software projects
-
-I'm constantly learning through projects, hackathons, experimentation, and problem solving.
+- 🤖 Exploring LLM Engineering, RAG, and Agentic AI
+- 🧠 Building AI-powered applications and intelligent workflows
+- 🔗 Experimenting with LangChain, LangGraph, and vector databases
+- 💻 Practising Data Structures & Algorithms
+- 🌱 Exploring open-source development and collaborative engineering
+- 🏆 Participating in hackathons and technical challenges
 
 ---
 
 ## ⚡ Tech Stack
 
-### Languages
+**Languages**
 
-`Python` `C` `Java` `JavaScript` 
+`Python` `C` `C++` `Java` `JavaScript` `Solidity`
 
-### AI / GenAI
+**AI / Machine Learning**
 
-`LLMs` `RAG` `LangChain` `LangGraph` `OpenAI API` `Claude API` `Prompt Engineering` `Agentic AI`
+`Generative AI` `LLMs` `RAG` `LangChain` `LangGraph` `OpenAI API` `Claude API` `Prompt Engineering` `Agentic AI`
 
-### Development
+**Backend & Development**
 
-`React` `Node.js` `Django` `HTML` `CSS` `MongoDB`
+`FastAPI` `Django` `Node.js` `React` `REST APIs` `HTML` `CSS`
 
-### Tools & Platforms
+**Databases & Cloud**
 
-`Git` `GitHub` `VS Code` 
+`MySQL` `PostgreSQL` `SQLite` `MongoDB` `AWS`
+
+**Tools & Platforms**
+
+`Git` `GitHub` `VS Code` `Hardhat` `OpenZeppelin`
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🤖 AI Code Reviewer
+### 🏛️ [RegulaLens AI](https://github.com/rajshreesinha-23/regulalens-ai)
 
-An AI-powered code review assistant designed to analyze code, identify potential issues, and provide meaningful suggestions.
+**AI-Powered Regulatory Intelligence Platform**
 
-**Tech:** Python · FastAPI · LLM APIs
+An intelligent regulatory document analysis platform designed to process and compare regulatory circulars, helping users identify changes and understand their potential impact.
 
----
+- PDF ingestion and document extraction
+- Page-wise content processing and metadata storage
+- Regulatory document comparison
+- Change detection and impact analysis
+- FastAPI backend and interactive dashboard
 
-### 🏛️ Government Scheme Finder
+**Tech:** Python · FastAPI · React · SQLite · PyMuPDF
 
-A **RAG-based application** that helps users discover relevant government schemes through natural-language queries.
+### 🌉 [Cortex Bridge](https://github.com/rajshreesinha-23/Cortex_bridge)
 
-**Tech:** Python · LangChain · RAG · Claude API
+**AI-Integrated Full-Stack Application**
 
----
+A full-stack development project exploring the integration of AI capabilities into modern web applications.
 
-### 🌉 Cortex Bridge
+**Tech:** React · Node.js · MongoDB · AI APIs
 
-A full-stack application integrating AI capabilities into a modern web application.
+### 🌱 Open Source Contributions
 
-**Tech:** React · Node.js · MongoDB · OpenAI APIs
+Exploring open-source development through GitHub repositories, collaborative development, testing, and code improvements.
 
----
-
-### 📊 Data Governance Platform
-
-A web platform designed to manage and organize data governance workflows.
-
-**Tech:** Python · Django
+Currently interested in contributing to developer tools, AI applications, and community-driven projects.
 
 ---
 
-### 💰 Personal Expense Tracker
-
-A personal finance application for tracking and managing expenses.
-
-**Tech:** Java · HTML · CSS
-
----
-
-## 🧠 Currently Exploring
-
-```text
-LLM Engineering
-      ↓
-RAG & Vector Databases
-      ↓
-AI Agents
-      ↓
-LangGraph
-      ↓
-Cloud Deployment
-      ↓
-Production AI Systems
-```
-
-I'm particularly interested in moving beyond simply using AI APIs and learning how to build **reliable, useful, and production-ready AI systems**.
-
----
-
-## 🏆 Hackathons & Activities
-
-* 🏆 Smart India Hackathon qualifier
-* 🚀 National-level hackathon participant
-* 🌌 NASA Space Apps Challenge — 2024 & 2025
-* 🤖 AI & GenAI hackathon participant
-* 👩‍💼 **ACM DSU — Membership Chair**
-
----
-
-## 🌐 About This Portfolio
-
-This website is designed as a **developer-focused portfolio** rather than a traditional resume website.
-
-The design takes inspiration from:
-
-* Terminal interfaces
-* Developer tools
-* Minimal dark UI
-* Clean typography
-* Interactive experiences
-
-### Sections
-
-```text
-/about
-/projects
-/skills
-/contact
-```
-
----
-
-## 📈 My Goal
-
-I'm working towards becoming an **AI / LLM Engineer** who can take an idea from:
-
-```text
-Idea
-  ↓
-Research
-  ↓
-Prototype
-  ↓
-AI Integration
-  ↓
-Engineering
-  ↓
-Deployment
-  ↓
-Real-world Product
-```
-
----
-
-## 📫 Connect With Me
-
-* 💼 **LinkedIn:** https://www.linkedin.com/in/rajshree-sinha-78b7b9314/
-* 🐙 **GitHub:**https://github.com/rajshreesinha-23
-* 📧 **Email:** rajshreesinha2302@gmail.com
-* 🌐 **Portfolio:** https://rajshreesinha-23.github.io/portfolio/
-
----
-
-## ⭐ Thanks for Visiting
-
-If you're interested in **AI, LLMs, GenAI, software development, or building cool things**, feel free to explore my projects or connect with me.
+## 📊 GitHub Analytics
 
 <p align="center">
-  <b>Build. Learn. Experiment. Repeat. 🚀</b>
+  <img src="https://github-readme-stats.vercel.app/api?username=rajshreesinha-23&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajshreesinha-23&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=rajshreesinha-23&theme=tokyonight&hide_border=true" width="70%"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rajshreesinha-23&theme=tokyo-night&hide_border=true" width="100%"/>
+</p>
+
+---
+
+## 🧠 My Current Learning Path
+
+```text
+Python & Core Engineering
+          ↓
+Machine Learning & AI
+          ↓
+LLM Engineering
+          ↓
+RAG & Vector Databases
+          ↓
+Agentic AI & LangGraph
+          ↓
+Backend Integration
+          ↓
+Cloud Deployment
+          ↓
+Production-Ready AI Systems
+```
+
+My goal is to understand the complete lifecycle of AI applications — from data processing and model integration to backend architecture, deployment, and real-world usability.
+
+---
+
+## 🏆 Hackathons & Achievements
+
+- 🏆 Smart India Hackathon Qualifier
+- 🚀 Finalist in 4+ hackathons
+- 🌌 NASA Space Apps Challenge – 2024 & 2025
+- 💡 Participated in 15+ hackathons and technical challenges
+- 🎯 Cleared Round 1 of the Tata Imagination Challenge
+- 👩‍💼 Membership Chair – ACM DSU
+
+---
+
+## 🎯 What I'm Working Towards
+
+I'm working towards becoming an **AI / LLM Engineer**, with a strong foundation in software engineering, backend development, and intelligent application design.
+
+I believe in learning by building, improving through experimentation, and contributing to the developer community.
+
+---
+
+## 🌐 Let's Connect
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/rajshree-sinha-78b7b9314/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="https://github.com/rajshreesinha-23">
+    <img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github"/>
+  </a>
+  <a href="mailto:rajshreesinha2302@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"/>
+  </a>
+  <a href="https://rajshreesinha-23.github.io/portfolio/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-purple?style=for-the-badge&logo=googlechrome"/>
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <b>Build. Break. Learn. Improve. Repeat. 🚀</b>
+</p>
+
+<p align="center">
+  <i>Thanks for visiting my corner of GitHub!</i>
 </p>
