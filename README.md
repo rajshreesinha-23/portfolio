@@ -57,13 +57,6 @@ An intelligent regulatory document analysis platform designed to process and com
 
 **Tech:** Python · FastAPI · React · SQLite · PyMuPDF
 
-### 🌉 [Cortex Bridge](https://github.com/rajshreesinha-23/Cortex_bridge)
-
-**AI-Integrated Full-Stack Application**
-
-A full-stack development project exploring the integration of AI capabilities into modern web applications.
-
-**Tech:** React · Node.js · MongoDB · AI APIs
 
 ### 🌱 Open Source Contributions
 
